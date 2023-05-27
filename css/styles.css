@@ -723,7 +723,8 @@ img {
   display: inline-flex;
   width: 16px;
   height: 16px;
-  border: 1px solid var(--dark);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
   background-color: transparent;
@@ -744,6 +745,7 @@ img {
   + .form-field-checkbox
   > .contact-form-checkbox-wrapper {
   background: var(--pressed-state);
+  border-color: var(--pressed-state);
   border: none;
   fill: var(--main-color);
 }

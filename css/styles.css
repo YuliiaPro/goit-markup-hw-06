@@ -745,8 +745,8 @@ img {
   + .form-field-checkbox
   > .contact-form-checkbox-wrapper {
   background: var(--pressed-state);
-  border-color: var(--pressed-state);
   border: none;
+  border-color: var(--pressed-state);
   fill: var(--main-color);
 }
 .contact-form-checkbox-link {

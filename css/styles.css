@@ -650,7 +650,11 @@ img {
 .contact-form-item {
   margin-bottom: 8px;
 }
+.contact-form-comment {
+  margin-bottom: 16px;
+}
 .form-field-wrapper {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -668,24 +672,24 @@ img {
   display: block;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
   padding-left: 38px;
   color: var(--dark);
-  transition: border-color var(--transition-duration-and-function),
-    fill var(--transition-duration-and-function);
+  transition: border-color var(--transition-duration-and-function);
 }
 .form-icon {
   display: block;
   position: absolute;
   top: 50%;
-  left: 16px;
   transform: translateY(-50%);
+  left: 16px;
   fill: var(--dark);
-  transform: fill var(--transition-duration-and-function);
+  transition: fill var(--transition-duration-and-function);
 }
+
 .contact-form-input:hover,
 .contact-form-input:focus {
   border: 1px solid var(--primary-brand);
@@ -698,37 +702,33 @@ img {
   width: 100%;
   height: 120px;
   background-color: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  outline: transparent;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  transition: border var(--primary-brand);
+  transition: border-color var(--transition-duration-and-function);
 }
 .contact-form-message:hover,
 .contact-form-message:focus {
   border: 1px solid var(--primary-brand);
-  outline: none;
 }
 .contact-form-checkbox-wrapper {
   width: 16px;
   height: 16px;
-  left: 20px;
-  top: 20px;
-  padding: 4.27;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--dark);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
   display: inline-flex;
   background-color: transparent;
   fill: transparent;
-  align-items: center;
   justify-content: center;
 }
 
@@ -745,22 +745,26 @@ img {
   + .form-field-checkbox
   > .contact-form-checkbox-wrapper {
   background: var(--pressed-state);
+  border: none;
+  fill: var(--main-color);
+  border: 1px solid var(--pressed-state);
 }
 .contact-form-checkbox-link {
   color: var(--primary-brand);
 }
-
+.form-checkbox {
+  margin-bottom: 24px;
+}
 .contact-form-btn {
   font-family: 'Roboto', sans-serif;
-  display: flex;
+  display: block;
   text-align: center;
   letter-spacing: 0.04em;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
-  margin-top: 24px;
   background: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
